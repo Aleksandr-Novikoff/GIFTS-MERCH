@@ -1,0 +1,30 @@
+.custom-search {
+  position: relative;
+
+ &__field {
+   border: 4px solid $color-black;
+   border-radius: 90px;
+   width: 491px;
+   padding: 18px 28px 18px 59px;
+
+   &::placeholder {
+     font-size: 16px;
+     color: $color-gray;
+     line-height: 17px;
+   }
+
+   &:focus {
+     outline: none;
+     box-shadow: 0 0 0 2px rgba(100, 150, 255, 0.5);
+     border-color: $color-light-blue;
+   }
+ }
+
+  &__icon {
+    position: absolute;
+    top: 33px;
+    left: 30px;
+    transform: translateY(-50%);
+  }
+
+}
